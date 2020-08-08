@@ -1,0 +1,1313 @@
+/*
+Theme Name:     JTHEME
+Version:        1.0
+Description:    Custom CSS
+*/
+/* 
+	All custom ids and classes used for the theme, starts with "jtheme".
+	For demo 1 to demo 6, it uses "jtheme".
+	For demo 2, it uses "jthemeD2".
+	For demo 3, it uses "jthemeD3".
+	For demo 4, it uses "jthemeD4".
+	For demo 5, it uses "jthemeD5".
+	For demo 6, it uses "jthemeD6".
+	For index page, it uses "jthemeIndex".
+	For documentation page, it uses "jthemeDoc".
+*/
+/* TABLE OF CONTENTS
+	1. body
+		1.1 #jtheme-body
+	2. headlines
+		2.1 for demo 1 to demo 6
+			2.1.1 #jtheme-body h1, h2, h3, h4, h5, h6
+		2.2 for demo 2
+			2.2.2 .jthemeD2-h2
+			2.2.3 .jthemeD2-h4
+		2.3 for demo 3
+			2.3.1 jthemeD3-h2
+			2.3.2 .jthemeD3-h4
+		2.4 for demo 4
+			2.4.1 .jthemeD4-h3
+		2.5 for demo 5
+			2.5.1 .jthemeD5-h3
+		2.6 for demo 6
+			2.6.1 .jthemeD6-h3
+	3. paragraph
+		3.1 for demo 1 to demo 6
+			3.1.1 #jtheme-body p
+		3.2 for demo 2
+			3.2.1 .jthemeD2-p
+		3.3 for demo 3
+			3.3.1 .jthemeD3-p
+	4. sections
+		4.1 #header, #about, #menu, #services, #special-menu, #reviews, #contact
+	5. column
+		5.1 .jtheme-column
+	6. horizontal rule
+		6.1 .jtheme-hr
+	7. image
+		7.1 .jtheme-image-1
+		7.2 .jtheme-image-2
+		7.3 .jtheme-image-3
+	8. hover
+		8.1 f.jtheme-hover-1
+		8.2 .jtheme-hover-2
+		8.3 .jtheme-hover-3
+		8.4 .jtheme-hover-4
+	9. media
+		9.1 .jtheme-padding
+		9.2 .jtheme-margin-1
+		9.3 .jtheme-margin-2
+		9.4 .jtheme-margin-3
+		9.5 .jtheme-margin-4
+		9.6 .jthemeD4-h4
+		9.7 .jthemeD5-h4
+		9.8 .jthemeD6-h4
+	10. height of all elements
+		10.1 *
+	11. navigation
+		11.1 for demo 1 to demo 6
+			11.1.1 #jtheme-navbar
+			11.1.2 .jtheme-navbar.solid
+			11.1.3 .jtheme-nav-link
+		11.5 for documentation
+			11.2.1 #jthemeDoc-navbar
+			11.2.2 .jthemeDoc-nav-pills
+			11.2.3 .jthemeDoc-nav-link
+	12. button
+		12.1 .jtheme-button
+	13. left
+		13.1 .jtheme-left
+	14. right
+		14.1 .jtheme-right
+	15. parallax
+		15.1 for demo 1 to demo 6
+			15.1.1 .jtheme-parallax-1
+			15.1.2 .jtheme-parallax-2
+			15.1.3 .jtheme-parallax-3
+		15.2 for demo 2
+			15.2.1 .jthemeD2-parallax-1
+		15.3 for demo 3
+			15.3.1 .jthemeD3-parallax-1
+			15.3.2 .jthemeD3-parallax-2
+			15.3.3 .jthemeD3-parallax-3
+		15.4 for demo 4
+			15.4.1 .jthemeD4-parallax-1
+		15.5 for demo 5
+			15.5.1 .jthemeD5-parallax-1
+			15.5.2 .jthemeD5-parallax-2
+			15.5.3 .jthemeD5-parallax-3
+	16. videos
+		16.1 for demo 6
+			16.1.1 .jtheme-video-1
+			16.1.2 .jtheme-video-2
+			16.1.3 .jtheme-video-3
+	17. form
+		17.1 .jtheme-form
+	18. input
+		18.1 .jtheme-field input
+	19. textarea
+		19.1 .jtheme-field textarea
+	20. header
+		20.1 for demo 1
+			20.1.1 .jtheme-header-1
+			20.1.2 .jtheme-header-2
+	21. menu
+		21.1 .jtheme-menu
+	22. reviews
+		22.1 .jtheme-reviews-1
+		22.2 .jtheme-reviews-2
+		22.3 .jtheme-reviews-3
+		22.4 .jtheme-reviews-4
+	23. contact
+		23.1 .jtheme-contact
+	24. footer
+		24.1 for demo 1 to demo 6
+			24.1.1 #jtheme-footer
+		24.2 for index
+			24.2.1 #jthemeIndex-footer
+	25. color
+		25.1 for index
+			25.1.1 .jthemeIndex-color-1
+			25.1.2 .jthemeIndex-color-2
+			25.1.3 .jthemeIndex-color-3
+		25.2 for documentation
+			25.2.1 .jthemeDoc-color-1
+			25.2.2 .jthemeDoc-color-2
+	26. box
+		26.1 for index
+			26.1.1 .jthemeIndex-box-1
+			26.1.2 .jthemeIndex-box-2
+			26.1.3 .jthemeIndex-box-3
+			26.1.4 .jthemeIndex-box-4
+			26.1.5 .jthemeIndex-box-5
+			26.1.6 .jthemeIndex-box-6
+	27. scroll
+		27.1 for documentation
+			27.1.1 .jthemeDoc-scroll
+END OF TABLE OF CONTENTS */
+/* CUSTOM CSS */
+/* DEMO 1 TO DEMO 6 BODY */
+#jtheme-body{
+	background-color: #0A090C;
+	color: #FDFFFC;
+	height: 100vh;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+	line-height: 1.5;
+}
+/* END OF DEMO 1 TO DEMO 6 BODY */
+/* DEMO 1 TO DEMO 6 HEADLINES */
+#jtheme-body h1, h2{
+	font-family: 'Krona One', sans-serif;
+	background-color: transparent;
+	color: #F1D302;
+	font-weight: normal;
+	line-height: 1.5;
+}
+#jtheme-body h3{
+	font-family: 'Krona One', sans-serif;
+	background-color: transparent;
+	color: #FDFFFC;
+	font-weight: normal;
+	line-height: 1.5;
+}
+#jtheme-body h4, h5, h6{
+	font-family: 'Krona One', sans-serif;
+	background-color: transparent;
+	color: #F5FF90;
+	font-weight: normal;
+	line-height: 1.5;
+}
+/* END OF DEMO 1 TO DEMO 6 HEADLINES */
+/* DEMO 2 HEADLINES */
+#jtheme-body .jthemeD2-h2{
+	font-family: 'Bad Script', cursive;
+}
+#jtheme-body .jthemeD2-h4{
+	font-family: 'Krona One', sans-serif;
+}
+/* END OF DEMO 2 HEADLINES */
+/* DEMO 3 HEADLINES */
+#jtheme-body .jthemeD3-h2{
+	font-family: 'Bad Script', cursive;
+}
+#jtheme-body .jthemeD3-h4{
+	font-family: 'Krona One', sans-serif;
+}
+/* END OF DEMO 3 HEADLINES */
+/* DEMO 4 HEADLINES */
+#jtheme-body .jthemeD4-h3{
+	background-color: transparent;
+	color: #F1D302;
+	font-family: 'Krona One', sans-serif;
+}
+/* END OF DEMO 4 HEADLINES */
+/* DEMO 5 HEADLINES */
+#jtheme-body .jthemeD5-h3{
+	background-color: transparent;
+	color: #F1D302;
+	font-family: 'Krona One', sans-serif;
+}
+/* END OF DEMO 5 HEADLINES */
+/* DEMO 6 HEADLINES */
+#jtheme-body .jthemeD6-h3{
+	background-color: transparent;
+	color: #F1D302;
+	font-family: 'Krona One', sans-serif;
+}
+/* END OF DEMO 6 HEADLINES */
+/* DEMO 1 TO DEMO 6 PARAGRAPH */
+#jtheme-body p{
+	background-color: transparent;
+}
+/* END OF DEMO 1 TO DEMO 6 PARAGRAPH */
+/* DEMO 2 PARAGRAPH */
+#jtheme-body .jthemeD2-p{
+	font-family: 'Bad Script', cursive;
+	font-weight: normal;
+}
+/* END OF DEMO 2 PARAGRAPH */
+/* DEMO 3 PARAGRAPH */
+#jtheme-body .jthemeD3-p{
+	font-family: 'Bad Script', cursive;
+	font-weight: normal;
+}
+/* END OF DEMO 3 PARAGRAPH */
+/* DEMO 1 TO DEMO 6 SECTIONS */
+#header, #about, #menu, #services, #special-menu, #reviews, #contact{
+	background-color: #0A090C;
+}
+/* END OF DEMO 1 TO DEMO 6 SECTIONS */
+/* DEMO 1 TO DEMO 6 COLUMN */
+.jtheme-column{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+/* END OF DEMO 1 TO DEMO 6 COLUMN */
+/* DEMO 1 TO DEMO 6 HORIZONTAL RULE */
+.jtheme-hr{
+	border-top: 2px solid #BFB1C1;
+	width: 15vw;
+	text-align: middle;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+/* END OF DEMO 1 TO DEMO 6 HORIZONATAL RULE */
+/* DEMO 1 TO DEMO 6 IMAGE */
+.jtheme-image-1{
+	border: 0;
+	border-radius: 0;
+	background-color: #89B6A5;
+	object-fit: cover;
+}
+.jtheme-image-2{
+	border: 0;
+	border-radius: 0;
+	background-color: #89B6A5;
+	object-fit: cover;
+}
+.jtheme-image-3{
+	width: 100vw;
+	object-fit: cover;
+}
+/* END OF DEMO 1 TO DEMO 6 IMAGE */
+/* DEMO 1 TO DEMO 6 HOVER */
+.jtheme-hover-1{
+	position: relative;
+}
+.jtheme-hover-2{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100%;
+	background: rgba(10, 9, 12, 0.9);
+	overflow: hidden;
+	height: 0;
+	transition-delay: 0.3s;
+	transition-duration: 1s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+.jtheme-hover-1:hover .jtheme-hover-2{
+	bottom: 0;
+	height: 100%;
+}
+.jtheme-hover-3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #FDFFFC;
+	font-size: 18px;
+}
+.jtheme-hover-4{
+	color: #FDFFFC;
+	position: relative;
+	padding: 10px;
+}
+.jtheme-hover-4:hover{
+	color: #FDFFFC;
+	border: 0;
+	border-radius: 0;
+}
+.jtheme-hover-4::after{
+	position: absolute;
+	content: '';
+	display: block;
+  	width: 0;
+  	left: 0;
+  	color: #FDFFFC;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #F1D302;
+  	transition-delay: 0s;
+	transition-duration: 1s;
+	transition-property: all;
+	transition-timing-function: ease;
+	visibility: hidden;
+}
+.jtheme-hover-4:hover::after{
+	width: 100%;
+	visibility: visible;
+}
+/* END OF DEMO 1 TO DEMO 6 HOVER */
+/* DEMO 1 TO DEMO 6 MEDIA */
+@media (max-width: 575px){
+	#jtheme-body{
+		font-size: 15px;
+	}
+	#jtheme-body h1, h2{
+		font-size: 35px;
+	}
+	#jtheme-body h3{
+		font-size: 25px;
+	}
+	#jtheme-body h4{
+		font-size: 18px;
+	}
+	#jtheme-body h5{
+		font-size: 16px;
+	}
+	#jtheme-body h6{
+		font-size: 14px;
+	}
+	.jtheme-padding{
+		padding-top: 100px;
+		padding-bottom: 100px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.jtheme-margin-1{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.jtheme-margin-2{
+		margin-top: 70px;
+	}
+	.jtheme-margin-3{
+		margin-bottom: 70px;
+		margin-left: 30px;
+	}
+	.jtheme-margin-4{
+		margin-bottom: 60px;
+	}
+	.jtheme-image-1{
+		width: 100vw;
+		height: 70vh;
+	}
+	.jtheme-image-2{
+		width: 60vw;
+		height: 80vh;
+	}
+	.jtheme-hover-1{
+		width: 60vw;
+	}
+	.jtheme-hover-2{
+		width: 60vw;
+	}
+	.jtheme-parallax-1{
+		height: 180vh;
+	}
+	#jtheme-navbar{
+		font-size: 18px;
+	}
+	#jtheme-navbar .jtheme-nav-link{
+		margin-right: 0;
+	}
+	#jtheme-navbar .navbar-brand{
+		font-size: 16px;
+	}
+	.jtheme-button{
+		font-size: 15px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.jtheme-header-1{
+		font-size: 21px;
+	}
+	.jtheme-header-2{
+		font-size: 18px;
+	}
+	.jtheme-menu{
+		font-size: 14px;
+	}
+	.jtheme-reviews-3{
+		font-size: 18px;
+	}
+	.jtheme-form{
+		padding: 30px;
+	}
+	.form-control::placeholder{
+		font-size: 12px;
+	}
+	/* DEMO 2 AND DEMO 3 MEDIA */
+	#jtheme-body .jthemeD2-h2, #jtheme-body .jthemeD3-h2{
+		font-size: 42px;
+		margin-top: 21px;
+	}
+	#jtheme-body .jthemeD2-h4, #jtheme-body .jthemeD3-h4{
+		font-size: 13px;
+	}
+	#jtheme-body .jthemeD2-p, #jtheme-body .jthemeD3-p{
+		font-size: 17px;
+	}
+	/* END OF DEMO 2 AND DEMO 3 MEDIA */
+	/* DEMO 4 AND DEMO 5 AND DEMO 6 MEDIA */
+	#jtheme-body .jthemeD4-h4, #jtheme-body .jthemeD5-h4, #jtheme-body .jthemeD6-h4{
+		font-size: 14px;
+	}
+	/* END OF DEMO 4 AND DEMO 5 AND DEMO 6 MEDIA */
+}
+@media (min-width: 576px){
+	#jtheme-body{
+		font-size: 16px;
+	}
+	#jtheme-body h1, h2{
+		font-size: 45px;
+	}
+	#jtheme-body h3{
+		font-size: 30px;
+	}
+	#jtheme-body h4{
+		font-size: 20px;
+	}
+	#jtheme-body h5{
+		font-size: 18px;
+	}
+	#jtheme-body h6{
+		font-size: 16px;
+	}
+	.jtheme-padding{
+		padding-top: 100px;
+		padding-bottom: 100px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.jtheme-margin-1{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	.jtheme-margin-2{
+		margin-top: 70px;
+	}
+	.jtheme-margin-3{
+		margin-bottom: 70px;
+		margin-left: 40px;
+	}
+	.jtheme-margin-4{
+		margin-bottom: 60px;
+	}
+	.jtheme-image-1{
+		width: 100vw;
+		height: 80vh;
+	}
+	.jtheme-image-2{
+		width: 50vw;
+		height: 70vh;
+	}
+	.jtheme-hover-1{
+		width: 50vw;
+	}
+	.jtheme-hover-2{
+		width: 50vw;
+	}
+	.jtheme-parallax-1{
+		height: 160vh;
+	}
+	#jtheme-navbar{
+		font-size: 20px;
+	}
+	#jtheme-navbar .jtheme-nav-link{
+		margin-right: 0;
+	}
+	#jtheme-navbar .navbar-brand{
+		font-size: 18px;
+	}
+	.jtheme-button{
+		font-size: 16px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.jtheme-header-1{
+		font-size: 21px;
+	}
+	.jtheme-header-2{
+		font-size: 19px;
+	}
+	.jtheme-menu{
+		font-size: 14px;
+	}
+	.jtheme-reviews-3{
+		font-size: 21px;
+	}
+	.jtheme-form{
+		padding: 40px;
+	}
+	.form-control::placeholder{
+		font-size: 14px;
+	}
+	/* DEMO 2 AND DEMO 3 MEDIA */
+	#jtheme-body .jthemeD2-h2, #jtheme-body .jthemeD3-h2{
+		font-size: 60px;
+		margin-top: 30px;
+	}
+	#jtheme-body .jthemeD2-h4, #jtheme-body .jthemeD3-h4{
+		font-size: 14px;
+	}
+	#jtheme-body .jthemeD2-p, #jtheme-body .jthemeD3-p{
+		font-size: 19px;
+	}
+	/* END OF DEMO 2 AND DEMO 3 MEDIA */
+	/* DEMO 4 AND DEMO 5 AND DEMO 6 HEADLINES */
+	#jtheme-body .jthemeD4-h4, #jtheme-body .jthemeD5-h4, #jtheme-body .jthemeD6-h4{
+		font-size: 14px;
+	}
+	/* END OF DEMO 4 AND DEMO 5 AND DEMO 6 HEADLINES */
+}
+@media (min-width: 768px){
+	#jtheme-body{
+		font-size: 17px;
+	}
+	#jtheme-body h1, h2{
+		font-size: 60px;
+	}
+	#jtheme-body h3{
+		font-size: 40px;
+	}
+	#jtheme-body h4{
+		font-size: 22px;
+	}
+	#jtheme-body h5{
+		font-size: 18px;
+	}
+	#jtheme-body h6{
+		font-size: 16px;
+	}
+	.jtheme-padding{
+		padding-top: 100px;
+		padding-bottom: 100px;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	.jtheme-margin-1{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	.jtheme-margin-2{
+		margin-top: 70px;
+	}
+	.jtheme-margin-3{
+		margin-bottom: 70px;
+		margin-left: 60px;
+	}
+	.jtheme-margin-4{
+		margin-bottom: 60px;
+	}
+	.jtheme-image-1{
+		width: 100vw;
+		height: 80vh;
+	}
+	.jtheme-image-2{
+		width: 50vw;
+		height: 80vh;
+	}
+	.jtheme-hover-1{
+		width: 50vw;
+	}
+	.jtheme-hover-2{
+		width: 50vw;
+	}
+	.jtheme-parallax-1{
+		height: 160vh;
+	}
+	#jtheme-navbar{
+		font-size: 22px;
+	}
+	#jtheme-navbar .jtheme-nav-link{
+		margin-right: 0;
+	}
+	#jtheme-navbar .navbar-brand{
+		font-size: 21px;
+	}
+	.jtheme-button{
+		font-size: 17px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.jtheme-header-1{
+		font-size: 25px;
+	}
+	.jtheme-header-2{
+		font-size: 21px;
+	}
+	.jtheme-menu{
+		font-size: 15px;
+	}
+	.jtheme-reviews-3{
+		font-size: 23px;
+	}
+	.jtheme-form{
+		padding: 60px;
+	}
+	.form-control::placeholder{
+		font-size: 15px;
+	}
+	/* DEMO 2 AND DEMO 3 MEDIA */
+	#jtheme-body .jthemeD2-h2, #jtheme-body .jthemeD3-h2{
+		font-size: 80px;
+		margin-top: 40px;
+	}
+	#jtheme-body .jthemeD2-h4, #jtheme-body .jthemeD3-h4{
+		font-size: 16px;
+	}
+	#jtheme-body .jthemeD2-p, #jtheme-body .jthemeD3-p{
+		font-size: 21px;
+	}
+	/* END OF DEMO 2 AND DEMO 3 MEDIA */
+	/* DEMO 4 AND DEMO 5 AND DEMO 6 HEADLINES */
+	#jtheme-body .jthemeD4-h4, #jtheme-body .jthemeD5-h4, #jtheme-body .jthemeD6-h4{
+		font-size: 16px;
+	}
+	/* END OF DEMO 4 AND DEMO 5 AND DEMO 6 HEADLINES */
+}
+@media (min-width: 992px){
+	#jtheme-body{
+		font-size: 18px;
+	}
+	#jtheme-body h1, h2{
+		font-size: 70px;
+	}
+	#jtheme-body h3{
+		font-size: 40px;
+	}
+	#jtheme-body h4{
+		font-size: 24px;
+	}
+	#jtheme-body h5{
+		font-size: 18px;
+	}
+	#jtheme-body h6{
+		font-size: 16px;
+	}
+	.jtheme-padding{
+		padding: 100px;
+	}
+	.jtheme-margin-1{
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+	.jtheme-margin-2{
+		margin-top: 60px;
+	}
+	.jtheme-margin-3{
+		margin-bottom: 60px;
+		margin-left: 100px;
+	}
+	.jtheme-margin-4{
+		margin-bottom: 60px;
+	}
+	.jtheme-image-1{
+		width: 30vw;
+		height: 70vh;
+	}
+	.jtheme-image-2{
+		width: 20vw;
+		height: 60vh;
+	}
+	.jtheme-hover-1{
+		width: 20vw;
+	}
+	.jtheme-hover-2{
+		width: 20vw;
+	}
+	.jtheme-parallax-1{
+		height: 160vh;
+	}
+	#jtheme-navbar{
+		font-size: 21px;
+	}
+	#jtheme-navbar .jtheme-nav-link{
+		margin-right: 20px;
+	}
+	#jtheme-navbar .navbar-brand{
+		font-size: 22px;
+	}
+	.jtheme-button{
+		font-size: 18px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	.jtheme-header-1{
+		font-size: 24px;
+	}
+	.jtheme-header-2{
+		font-size: 21px;
+	}
+	.jtheme-menu{
+		font-size: 14px;
+	}
+	.jtheme-reviews-3{
+		font-size: 23px;
+	}
+	.jtheme-form{
+		padding: 60px;
+	}
+	.form-control::placeholder{
+		font-size: 16px;
+	}
+	/* DEMO 2 AND DEMO 3 MEDIA */
+	#jtheme-body .jthemeD2-h2, #jtheme-body .jthemeD3-h2{
+		font-size: 90px;
+		margin-top: 45px;
+	}
+	#jtheme-body .jthemeD2-h4, #jtheme-body .jthemeD3-h4{
+		font-size: 17px;
+	}
+	#jtheme-body .jthemeD2-p, #jtheme-body .jthemeD3-p{
+		font-size: 22px;
+	}
+	/* END OF DEMO 2 AND DEMO 3 MEDIA */
+	/* DEMO 4 AND DEMO 5 AND DEMO 6 HEADLINES */
+	#jtheme-body .jthemeD4-h4, #jtheme-body .jthemeD5-h4, #jtheme-body .jthemeD6-h4{
+		font-size: 19px;
+	}
+	/* END OF DEMO 4 AND DEMO 5 AND DEMO 6 HEADLINES */
+}
+@media (min-width: 1200px){
+	#jtheme-body{
+		font-size: 18px;
+	}
+	#jtheme-body h1, h2{
+		font-size: 80px;
+	}
+	#jtheme-body h3{
+		font-size: 60px;
+	}
+	#jtheme-body h4{
+		font-size: 24px;
+	}
+	#jtheme-body h5{
+		font-size: 18px;
+	}
+	#jtheme-body h6{
+		font-size: 16px;
+	}
+	.jtheme-padding{
+		padding: 100px;
+	}
+	.jtheme-margin-1{
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+	.jtheme-margin-2{
+		margin-top: 60px;
+	}
+	.jtheme-margin-3{
+		margin-bottom: 60px;
+		margin-left: 100px;
+	}
+	.jtheme-margin-4{
+		margin-bottom: 60px;
+	}
+	.jtheme-image-1{
+		width: 30vw;
+		height: 70vh;
+	}
+	.jtheme-image-2{
+		width: 20vw;
+		height: 60vh;
+	}
+	.jtheme-hover-1{
+		width: 20vw;
+	}
+	.jtheme-hover-2{
+		width: 20vw;
+	}
+	.jtheme-parallax-1{
+		height: 150vh;
+	}
+	#jtheme-navbar{
+		font-size: 23px;
+	}
+	#jtheme-navbar .jtheme-nav-link{
+		margin-right: 20px;
+	}
+	#jtheme-navbar .navbar-brand{
+		font-size: 25px;
+	}
+	.jtheme-button{
+		font-size: 18px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.jtheme-header-1{
+		font-size: 30px;
+	}
+	.jtheme-header-2{
+		font-size: 21px;
+	}
+	.jtheme-menu{
+		font-size: 16px;
+	}
+	.jtheme-reviews-3{
+		font-size: 23px;
+	}
+	.jtheme-form{
+		padding: 60px;
+	}
+	.form-control::placeholder{
+		font-size: 16px;
+	}
+	/* DEMO 2 AND DEMO 3 MEDIA */
+	#jtheme-body .jthemeD2-h2, #jtheme-body .jthemeD3-h2{
+		font-size: 120px;
+		margin-top: 60px;
+	}
+	#jtheme-body .jthemeD2-h4, #jtheme-body .jthemeD3-h4{
+		font-size: 18px;
+	}
+	#jtheme-body .jthemeD2-p, #jtheme-body .jthemeD3-p{
+		font-size: 26px;
+	}
+	/* END OF DEMO 2 AND DEMO 3 MEDIA */
+	/* DEMO 4 AND DEMO 5 AND DEMO 6 HEADLINES */
+	#jtheme-body .jthemeD4-h4, #jtheme-body .jthemeD5-h4, #jtheme-body .jthemeD6-h4{
+		font-size: 21px;
+	}
+	/* END OF DEMO 4 AND DEMO 5 AND DEMO 6 HEADLINES */
+}
+/* END OF DEMO 1 TO DEMO 6 MEDIA */
+/* DEMO 1 TO DEMO 6 HEIGHT OF ALL ELEMENTS */
+*{
+    min-height: 0.01px;
+}
+/* END OF DEMO 1 TO DEMO 6 HEIGHT OF ALL ELEMENTS */
+/* DEMO 1 TO DEMO 6 NAVIGATION */
+#jtheme-navbar{
+	background-color: #000000;
+	color: #FDFFFC;
+	font-family: 'Satisfy', cursive;
+	font-weight: normal;
+	line-height: 1.5;
+}
+#jtheme-navbar.solid{
+	background-color: #000000;
+	color: #FDFFFC;
+}
+#jtheme-navbar .jtheme-nav-link .navbar-text{
+	color: #FDFFFC;
+	position: relative;
+	padding: 0;
+}
+#jtheme-navbar .jtheme-nav-link .navbar-text:hover{
+	color: #FDFFFC;
+	border: 0;
+	border-radius: 0;
+}
+#jtheme-navbar .jtheme-nav-link .navbar-text::after{
+	position: absolute;
+	content: '';
+	display: block;
+	left: 0;
+  	width: 0;
+  	color: #FDFFFC;
+	border-bottom-width: 3px;
+	border-bottom-style: double;
+	border-bottom-color: #F1D302;
+  	transition-delay: 0s;
+	transition-duration: 1s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+#jtheme-navbar .jtheme-nav-link .navbar-text:hover::after{
+	width: 100%;
+}
+#jtheme-navbar .navbar-brand{
+	color: #F5FF90;
+}
+/* END OF DEMO 1 TO DEMO 6 NAVIGATION */
+/* DOCUMENTATION NAVIGATION */
+#jthemeDoc-navbar{
+	font-family: 'Satisfy', cursive;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+#jthemeDoc-nav-pills{
+	background-color: #000000;
+	color: #FDFFFC;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	transition-delay: 0.2s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+}
+#jthemeDoc-nav-pills .jthemeDoc-nav-link{
+	background-color: #000000;
+	color: #FDFFFC;
+}
+#jthemeDoc-nav-pills .jthemeDoc-nav-link:hover{
+	color: #BFB1C1;
+}
+#jthemeDoc-nav-pills .jthemeDoc-nav-link.active,#jthemeDoc-nav-pills .show>.jthemeDoc-nav-link{
+	background-color: #F5FF90;
+	color: #0A090C;
+	border-radius: 0;
+}
+/* END OF DOCUMENTATION NAVIGATION */
+/* DEMO 1 TO DEMO 6 BUTTON */
+.jtheme-button{
+	position: relative;
+	background-color: transparent;
+	color: #FDFFFC;
+	border-radius: 0;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #F1D302;
+}
+.jtheme-button:hover{
+	color: #FDFFFC;
+	border: 0;
+	border-radius: 0;
+}
+.jtheme-button::after{
+	position: absolute;
+	content: '';
+  	display: block;
+  	width: 0;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	bottom: 0;
+  	visibility: hidden;
+  	color: #FDFFFC;
+	border-radius: 0;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #F1D302;
+  	transition-delay: 0s;
+	transition-duration: 1s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+.jtheme-button:hover::after{
+	width: 100%;
+	visibility: visible;
+}
+/* END OF DEMO 1 TO DEMO 6 BUTTON */
+/* DEMO 1 TO DEMO 6 LEFT */
+.jtheme-left{
+	padding-left: 15px;
+	padding-right: 15px;
+	border-left: 10px solid #F1D302;
+}
+/* END OF DEMO 1 TO DEMO 6 LEFT */
+/* DEMO 1 TO DEMO 6 RIGHT */
+.jtheme-right{
+	padding-left: 15px;
+	padding-right: 15px;
+	border-right: 10px solid #F1D302;
+}
+/* END OF DEMO 1 TO DEMO 6 RIGHT */
+/* DEMO 1 TO DEMO 6 PARALLAX */
+.jtheme-parallax-1{
+    background-image: url("../images/header-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jtheme-parallax-2{
+	height: auto;
+    background-image: url("../images/menu.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+.jtheme-parallax-3{
+	height: auto;
+    background-image: url("../images/contact.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+/* END OF DEMO 1 TO DEMO 6 PARALLAX */
+/* DEMO 2 PARALLAX */
+.jthemeD2-parallax-1{
+	height: 100%;
+    background-image: url("../images/imageHeader.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+/* END OF DEMO 2 PARALLAX */
+/* DEMO 3 PARALLAX */
+.jthemeD3-parallax-1{
+	height: 100vh;
+    background-image: url("../images/imageSlider-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.jthemeD3-parallax-2{
+	height: 100vh;
+    background-image: url("../images/imageSlider-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.jthemeD3-parallax-3{
+	height: 100vh;
+    background-image: url("../images/imageSlider-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* END OF DEMO 3 PARALLAX */
+/* DEMO 4 PARALLAX */
+.jthemeD4-parallax-1{
+	height: 100vh;
+    background-image: url("../images/fadeHeader.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+/* END OF DEMO 4 PARALLAX */
+/* DEMO 5 PARALLAX */
+.jthemeD5-parallax-1{
+	height: 100vh;
+    background-image: url("../images/fadeSlider-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.jthemeD5-parallax-2{
+	height: 100vh;
+    background-image: url("../images/fadeSlider-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.jthemeD5-parallax-3{
+	height: 100vh;
+    background-image: url("../images/fadeSlider-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* END OF DEMO 5 PARALLAX */
+/* VIDEO */
+.jtheme-video-1{
+	position: relative;
+	background-color: black;
+	height: 100vh;
+	min-height: 25rem;
+	width: 100%;
+	overflow: hidden;
+}
+.jtheme-video-1 video{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	transform: translateX(-50%) translateY(-50%);
+}
+.jtheme-video-2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.9;
+	z-index: 1;
+}
+.jtheme-video-3{
+	position: relative;
+	z-index: 2;
+}
+/* END OF VIDEO */
+/* DEMO 1 TO DEMO 6 FORM */
+.jtheme-form{
+	background-color: #0A090C;
+	color: #FDFFFC;
+}
+/* END OF DEMO 1 TO DEMO 6 FORM */
+/* DEMO 1 TO DEMO 6 INPUT */
+.jtheme-field input{
+	border: 0;
+	border-radius: 0;
+}
+/* END OF DEMO 1 TO DEMO 6 INPUT */
+/* DEMO 1 TO DEMO 6 TEXTAREA */
+.jtheme-field textarea{
+	border: 0;
+	border-radius: 0;
+}
+/* END OF DEMO 1 TO DEMO 6 TEXTAREA */
+/* DEMO 1 HEADER */
+.jtheme-header-1{
+	font-family: 'Satisfy', cursive;
+	color: #F5FF90;
+	font-weight: normal;
+	line-height: 1.5;
+}
+.jtheme-header-2{
+	font-family: 'Satisfy', cursive;
+	color: #FDFFFC;
+	font-weight: normal;
+	line-height: 1.5;
+}
+/* END OF DEMO 1 HEADER */
+/* DEMO 1 TO DEMO 6 MENU */
+.jtheme-menu{
+	color: #F5FF90;
+	font-family: 'Krona One', sans-serif;
+	font-weight: normal;
+	line-height: 1;
+}
+/* END OF DEMO 1 TO DEMO 6 MENU */
+/* DEMO 1 TO DEMO 6 REVIEWS */
+.jtheme-reviews-1{
+	background-color: #000000;
+	padding: 50px;
+}
+.jtheme-reviews-2{
+	color: #F5FF90;
+	text-align: center;
+}
+.jtheme-reviews-3{
+	font-family: 'Bad Script', cursive;
+	font-weight: normal;
+	line-height: 1.5;
+}
+.jtheme-reviews-4{
+	color: #FDFFFC;
+}
+/* END OF DEMO 1 TO DEMO 6 REVIEWS */
+/* DEMO 1 TO DEMO 6 CONTACT */
+.jtheme-contact{
+	color: #FDFFFC;
+	position: relative;
+	padding: 5px;
+	font-weight: normal;
+}
+.jtheme-contact:hover{
+	color: #FDFFFC;
+	border: 0;
+	border-radius: 0;
+}
+.jtheme-contact::after{
+	position: absolute;
+	content: '';
+	display: block;
+  	width: 0;
+  	left: 0;
+  	color: #FDFFFC;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #F1D302;
+  	transition-delay: 0s;
+	transition-duration: 1s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+.jtheme-contact:hover::after{
+	width: 100%;
+}
+/* END OF DEMO 1 TO DEMO 6 CONTACT */
+/* DEMO 1 TO DEMO 6 FOOTER */
+#jtheme-footer{
+	background-color: #0A090C;
+	color: #FDFFFC;
+}
+/* END OF DEMO 1 TO DEMO 6 FOOTER */
+/* INDEX FOOTER */
+#jthemeIndex-footer{
+	background-color: #000000;
+	color: #FDFFFC;
+}
+/* END OF INDEX FOOTER */
+/* INDEX COLOR */
+.jthemeIndex-color-1{
+    color: #F5FF90;
+}
+.jthemeIndex-color-2{
+    color: #FDFFFC;
+}
+.jthemeIndex-color-3{
+    color: #BFB1C1;
+}
+/* END OF INDEX COLOR */
+/* DOCUMENTATION COLOR */
+.jthemeDoc-color-1{
+    color: #F1D302;
+}
+.jthemeDoc-color-2{
+    color: #89B6A5;
+}
+/* END OF DOCUMENTATION COLOR */
+/* INDEX BOX */
+.jthemeIndex-box-1{
+    background-color: #F5FF90;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.jthemeIndex-box-2{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+    left: 0;
+    right: 0;
+}
+.jthemeIndex-box-1:hover .jthemeIndex-box-3{
+    opacity: 1;
+}
+.jthemeIndex-box-5:hover .jthemeIndex-box-6{
+    opacity: 1;
+}
+.jthemeIndex-box-3{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 1s ease;
+	background: rgba(245, 255, 144, 1);
+}
+.jthemeIndex-box-4{
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.jthemeIndex-box-5{
+    background-color: #BFB1C1;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.jthemeIndex-box-6{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 1s ease;
+	background: rgba(191, 177, 193, 1);
+}
+/* END OF INDEX BOX */
+/* DOCUMENTATION */
+.jthemeDoc-scroll{
+	position: relative;
+	height: 100vh;
+	overflow-y: scroll;
+}
+#jtheme-body pre{
+	color: #BFB1C1;
+	font-weight: normal;
+}
+/* END OF DOCUMENTATION */
+/* END OF CUSTOM CSS */
